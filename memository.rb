@@ -22,7 +22,7 @@ end
 
 private
 def write_memo(pass, text)
-  memo_file = ".docks/memo"
+  memo_file = ".repository/memo"
   key = File.open(".key").read.chomp
   if pass == key
     File.open(memo_file, "a") {|f|
