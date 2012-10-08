@@ -28,9 +28,9 @@ def write_memo(pass, text)
     File.open(memo_file, "a") {|f|
       f.puts text
     }
-    repository = Grit::Repo.new(".repository")
-    repository.add(memo_file)
-    repository.commit_index("write memo.")
+    repo = Grit::Repo.new(".repository")
+    repo.add(memo_file)
+    repo.commit_index("write memo.")
     "done."
   else
     "Your not me..."
