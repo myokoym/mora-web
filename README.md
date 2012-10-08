@@ -4,7 +4,26 @@ A memo repository for multi interface and version control.
 
 ## Installation
 
-TODO
+### Download source code
+
+#### git clone
+
+    $ git clone git@github.com:myokoym/memository.git
+
+#### wget
+
+    $ wget https://github.com/myokoym/memository/tarball/master
+    $ tar xzvf master
+
+### Init
+
+Git init and input a confirm keyword.
+
+    $ ./init.sh
+
+### Upload
+
+Please upload it to any Web server.
 
 ## Usage
 
