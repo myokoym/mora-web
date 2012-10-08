@@ -6,18 +6,12 @@
     %meta{'http-equiv' => 'content-type', :content => 'text/html; charset=utf-8'}
     %meta{'http-equiv' => 'content-style-type', :content => 'text/css'}
     %meta{'http-equiv' => 'content-script-type', :content => 'text/javascript'}
-    %title memository
+    %title 音節
   %body
-    %h1 memository
-    %form{:action => "write", :method => "post"}
+    %h1 音節
+    %form{:action => "count", :method => "post"}
       %p
-        key
-        %br
-        %input{:type => "textfield", :name => "key"}
-      %p
-        memo
-        %br
-        %input{:type => "textarea", :name => "memo"}
+        %input{:type => "textarea", :name => "text"}
       %p
         %input{:type => "submit"}
       %div= @message
