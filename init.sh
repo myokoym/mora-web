@@ -7,4 +7,4 @@ git commit -m init
 
 echo -n "Please input a keyword.>>>"
 read KEY
-echo $KEY >.keytest
+echo $KEY >.key
