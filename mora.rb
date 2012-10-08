@@ -3,7 +3,7 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'MeCab'
-require 'mecab-syllable'
+require 'mecab-mora'
 
 get "/" do
   haml :index
@@ -11,15 +11,15 @@ end
 
 post "/count" do
   text = params['text']
-  @message = "#{text}: #{syllable_count(text)}拍"
+  @message = "#{text}: #{mora_count(text)}拍"
   haml :index
 end
 
 get "/count/:text" do |text|
-  syllable_count(text)
+  mora_count(text)
 end
 
 private
-def syllable_count(text)
-  MeCab::Syllable.new(text).count
+def mora_count(text)
+  MeCab::Mora.new(text).count
 end
