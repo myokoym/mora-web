@@ -29,7 +29,7 @@ def write_memo(pass, text)
       f.puts text
     }
     repo = Grit::Repo.new(".repository")
-    repo.add(memo_file)
+    Dir.chdir(".repository") { repo.add("memo") }
     repo.commit_index("write memo.")
     "done."
   else
