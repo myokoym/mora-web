@@ -11,7 +11,7 @@ end
 
 post "/count" do
   text = params['text']
-  @message = "#{text}: #{syllable_count(text)}音"
+  @message = "#{text}: #{syllable_count(text)}拍"
   haml :index
 end
 

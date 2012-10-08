@@ -1,10 +1,10 @@
-# Onsetsu
+# 拍数え - モーラ（拍）計算機
 
-mecab-syllable on web
+mecab-mora on web
 
 ## Usage
 
-http://myokoym.net/onsetsu/
+http://myokoym.net/mora/
 
 ## Contributing
 
