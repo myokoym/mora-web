@@ -28,7 +28,7 @@ def write_memo(pass, text)
     File.open(memo_file, "a") {|f|
       f.puts text
     }
-    repository = Grit::Repo.new(".git")
+    repository = Grit::Repo.new(".repository")
     repository.add(memo_file)
     repository.commit_index("write memo.")
     "done."
