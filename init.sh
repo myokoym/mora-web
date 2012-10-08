@@ -5,5 +5,6 @@ git init
 git add .
 git commit -m init
 
-touch .key
-echo Please edit .key file.
+echo -n "Please input a keyword.>>>"
+read KEY
+echo $KEY >.keytest
