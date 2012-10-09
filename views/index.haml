@@ -16,7 +16,7 @@
     %a{:href => "http://haml-lang.com/"} Haml
     ,
     %a{:href => "http://mecab.googlecode.com/svn/trunk/mecab/doc/index.html"} MeCab
-    %form{:action => "count", :method => "post"}
+    %form{:action => url("/count", false, true), :method => "post"}
       %p
         %input{:type => "textarea", :name => "text"}
       %p
