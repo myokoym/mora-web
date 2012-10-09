@@ -18,7 +18,7 @@
     %a{:href => "http://mecab.googlecode.com/svn/trunk/mecab/doc/index.html"} MeCab
     %form{:action => url("/count", false, true), :method => "post"}
       %p
-        %input{:type => "textarea", :name => "text"}
+        %input{:type => "textarea", :name => "text", :size => 40}
       %p
         %input{:type => "submit"}
       %div= @message
